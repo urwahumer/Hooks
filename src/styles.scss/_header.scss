@@ -1,0 +1,13 @@
+.user-height {
+  background-color: rosybrown;
+  color: $text-color;
+
+  font-size: 40px;
+  h1 {
+    @include flex(column);
+    background-color: $text-bg-color;
+    &:hover {
+      background-color: $text-color;
+    }
+  }
+}

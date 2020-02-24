@@ -1,0 +1,14 @@
+$text-color: gray;
+$text-bg-color: black;
+@mixin flex($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+@import "./header";
+
+.user-bottom-height {
+  @extend .user-height;
+  @include flex(column);
+}
