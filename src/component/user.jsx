@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Hooks from "./Hooks";
 import axios from "axios";
-
+import HOC from "./Hoc";
 function User(props) {
   const [counter, setcounter] = useState([]);
 
@@ -63,9 +63,9 @@ function User(props) {
         <button onClick={submit}>Click Me</button>
       </div>
 
-      <Hooks />
+      <Hooks pswd={password} />
     </form>
   );
 }
 
-export default User;
+export default HOC(User, "green");
